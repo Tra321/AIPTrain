@@ -1,0 +1,55 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+venv/
+env/
+.venv/
+.env/
+
+# 向量数据库（运行时产物，体积大且与代码无关）
+chroma_db/
+*.sqlite3
+*.db
+
+# HuggingFace 模型缓存（体积达 GB 级，仓库内不托管模型权重）
+models/
+models--*/
+snapshots/
+.no_exist/
+
+# 模型权重与分词器大文件
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# 日志与临时文件
+*.log
+logs/
+*.tmp
+*.bak
+
+# 操作系统杂项
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 与编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 依赖与构建产物
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
